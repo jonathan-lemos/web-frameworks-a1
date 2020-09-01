@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <title>review some shit</title>
+
+    <script src="script.js" ></script>
+</head>
+
+<body class="fluid col p-s m-m">
+    <div class="row">
+        <span id="rating-avg-text" class="m-s">0.0 out of 5</span>
+        <div id="rating-avg-stars" class="row m-s">
+            <span class="review-star size-150 fa fa-star-o"></span>
+            <span class="review-star size-150 fa fa-star-o"></span>
+            <span class="review-star size-150 fa fa-star-o"></span>
+            <span class="review-star size-150 fa fa-star-o"></span>
+            <span class="review-star size-150 fa fa-star-o"></span>
+        </div>
+    </div>
+
+    <div class="w-80 col p-m">
+        <div class="w-100 row m-s">
+            <div id="rating-new-stars" class="row m-s">
+                <span class="review-star clickable size-200 fa fa-star-o"></span>
+                <span class="review-star clickable size-200 fa fa-star-o"></span>
+                <span class="review-star clickable size-200 fa fa-star-o"></span>
+                <span class="review-star clickable size-200 fa fa-star-o"></span>
+                <span class="review-star clickable size-200 fa fa-star-o"></span>
+            </div>
+            <input id="name" class="grow p-m" placeholder="Name" type="text">
+            <button id="post-review-button" class="green">Post Review</button>
+        </div>
+        <textarea id="review" class="w-100 h-10-em m-s p-m" placeholder="Enter review text..."></textarea>
+    </div>
+
+    <hr class="w-100 m-m" />
+
+    <div id="reviews" class="w-80 col p-m">
+
+    </div>
+</body>
+
+</html>
