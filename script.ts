@@ -77,6 +77,7 @@ window.onload = function () {
         fillStars(byId("rating-avg-stars"), avg);
 
         byId("reviews").appendChild(rev);
+        rev.scrollIntoView();
     }
 
     let selectedRating = 0;

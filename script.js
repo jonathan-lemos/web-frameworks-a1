@@ -64,6 +64,7 @@ window.onload = function () {
         byId("rating-avg-text").innerText = `${avg.toFixed(1)} out of 5`;
         fillStars(byId("rating-avg-stars"), avg);
         byId("reviews").appendChild(rev);
+        rev.scrollIntoView();
     };
     let selectedRating = 0;
     const editStars = [...byId("rating-new-stars").querySelectorAll(".review-star")].map(x => x);

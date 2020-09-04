@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -169,4 +173,148 @@ input[type=text]:hover, textarea:hover {
 
 #reviews > *:nth-child(2n + 1):hover {
     background-color: #FFFFFF;
+}
+
+/*
+
+@keyframes glitch-img {
+    0% { 
+        transform: translateX(0) skewX(0);
+    }
+
+    35% { 
+        transform: translateX(0) skewX(0);
+    }
+
+    38% { 
+        transform: translateX(-0.2em) skewX(0);
+    }
+
+    41% { 
+        transform: translateX(0) skewX(0);
+    }
+
+    52% { 
+        transform: translateX(-0.2em) skewX(0.5deg);
+    }
+
+    55% { 
+        transform: translateX(0.2em) skewX(-0.5deg);
+    }
+
+    62% { 
+        transform: translateX(0) skewX(0);
+    }
+
+    65% { 
+        transform: translateX(0.2em) skewX(-0.5deg);
+    }
+
+    68% { 
+        transform: translateX(0) skewX(0);
+    }
+
+    71% { 
+        transform: translateX(0.2em) skewX(-0.5deg);
+    }
+
+    74% { 
+        transform: translateX(0) skewX(0);
+    }
+
+    100% { 
+        transform: translateX(0) skewX(0);
+    }
+}
+
+@keyframes glitch-mask {
+    0% { 
+        transform: translateX(0) skewX(0);
+        background-color: #00000000;
+        filter: blur(0);
+    }
+
+    35% { 
+        transform: translateX(0) skewX(0);
+        background-color: #00000000;
+        filter: blur(0);
+    }
+
+    38% { 
+        transform: translateX(-0.2em) skewX(0);
+        background-color: red;
+        filter: blur(0.05em);
+    }
+
+    41% { 
+        transform: translateX(0) skewX(0);
+        background-color: #00000000;
+        filter: blur(0);
+    }
+
+    52% { 
+        transform: translateX(-0.2em) skewX(0.5deg);
+        background-color: red;
+        filter: blur(0.05em);
+    }
+
+    55% { 
+        transform: translateX(0.2em) skewX(-0.5deg);
+        background-color: deepskyblue;
+        filter: blur(0.05em);
+    }
+
+    62% { 
+        transform: translateX(0) skewX(0);
+        background-color: #00000000;
+        filter: blur(0);
+    }
+
+    65% { 
+        transform: translateX(0.2em) skewX(-0.5deg);
+        background-color: deepskyblue;
+        filter: blur(0.05em);
+    }
+
+    68% { 
+        transform: translateX(0) skewX(0);
+    }
+
+    71% { 
+        transform: translateX(0.2em) skewX(-0.5deg);
+        background-color: red;
+        filter: blur(0.05em);
+    }
+
+    74% { 
+        transform: translateX(0) skewX(0);
+    }
+
+    100% { 
+        transform: translateX(0) skewX(0);
+    }
+}
+
+*/
+
+#arch {
+    position: relative;
+}
+
+#arch > img {
+    width: 20vw;
+    height: 20vw;
+    animation: glitch-img 1s linear infinite
+}
+
+#arch > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 5%;
+    background: black;
+    z-index: 1;
+    animation: glitch-mask 1s linear infinite;
 }
