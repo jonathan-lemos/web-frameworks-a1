@@ -52,6 +52,9 @@ window.onload = function () {
     }
 
     const appendReview = (name: string, rating: number, review: string): void => {
+        const date = new Date();
+        const dateString = `${date.getMonth().toString().padStart(2, "0")}/${date.getDay().toString().padStart(2, "0")}/${date.getFullYear()}`;
+
         const rev = document.createElement("div");
         rev.classList.add("w-100", "col", "p-m");
         rev.innerHTML = `
@@ -63,7 +66,7 @@ window.onload = function () {
                 <span class="review-star"></span>
                 <span class="review-star"></span>
             </div>
-            <span class="m-s">${name}</span>
+            <span class="m-s">${name} on ${dateString}</span>
         </div>
         <p class="w-100 m-s p-m">${review}</p>
         `
